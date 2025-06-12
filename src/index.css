@@ -1,22 +1,55 @@
 body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh; 
+    background-color: rgb(39, 39, 39);
+}
+.Event {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: rgb(39, 39, 39);
 }
 
-th {
-    place-items: center;
-    width: 120px;
-    padding-top:25px;
-    padding-bottom:30px;
+.Event:hover{
+    background-color: rgb(140, 140, 140);
+    text-decoration: none;
 }
 
-td {
-    padding: 5px;
+.Event img{
+    max-width:400px;
+    max-height: 300px;
 }
 
-.time {
-    height: 40px;
+.Event h6, h5 {
+  line-height: 0px;
+  align-content: center;
+}
+
+.pink {
+    background: pink;
+}
+
+.blue {
+    background: rgb(190, 219, 229);
+}
+
+.green {
+    
+    background: rgb(202, 245, 222);
+} 
+
+button {
+    background-color: rgb(109, 109, 109);
+    color: whitesmoke;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(140, 140, 140);
+    text-decoration: none;
 }
