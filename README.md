@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://giphy.com/gifs/0RWGT4sICweRa8FlOm' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/58T9UHH' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 GIF created with Giphy
