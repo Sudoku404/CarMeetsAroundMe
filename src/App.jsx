@@ -1,16 +1,21 @@
 import './App.css';
 import Meets from './components/Meets';
-
+import Highlight from './components/Gallery'
 const App = () => {
 
   return (
     <div className="App">
       <div className="header">
         <h1>Car Meets Around Me</h1>
-        <h2>Explore Different Communities</h2>
       </div>
-     
-      <Meets />
+      <div className="Highlights">
+        <h2>Highlights from Recent Events</h2>
+        <Highlight />
+      </div>
+      <div className="Meets">
+        <h2>Explore Different Communities</h2>
+        <Meets />
+      </div>
     </div>
   )
 }

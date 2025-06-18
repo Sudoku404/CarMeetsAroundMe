@@ -1,48 +1,49 @@
-# Web Development Project 1 - CarMeetsAroundMe
+# Web Development Project 2 - *CarMeetsAroundMe*
 
-Submitted by: Matthew Alexander Awad
+Submitted by: **Matthew Awad**
 
-This web app: CarMeetsAroundMe
+This web app: **Displays a Community Board of Car Meets Near Your Location**
 
-Time spent: 7 hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
--[√] **The app has a cohesive, unique theme for events or resources relevant to a specific community**
-  - [√] Header/title describing the theme is displayed
-- [√] **At least 10 unique events or resources are displayed in a responsive card format**
-  - [√] There are at least 10 cards displayed 
-  - [√] The cards should be displayed in an organized format (ex. a grid, or in one line)
-  - [√] Each card should include some information about the event or resource
 
+- [√] **The app displays the title of the card set, a short description, and the total number of cards**
+  - [√] Title of card set is displayed 
+  - [√] A short description of the card set is displayed 
+  - [√] A list of card pairs is created
+  - [√] The total number of cards in the set is displayed 
+  - [√] Card set is represented as a list of card pairs (an array of dictionaries where each dictionary contains the question and answer is perfectly fine)
+- [√] **A single card at a time is displayed**
+  - [√] Only one half of the information pair is displayed at a time
+- [√] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
+  - [√] Clicking on a card flips it over, showing the back with corresponding information 
+  - [√] Clicking on a flipped card again flips it back, showing the front
 
 The following **optional** features are implemented:
 
-- [ ] Buttons or links to a related resources are on each card component
-  - [ ] All cards have buttons or links in addition to text
-- [ ] The site is responsive for both desktop and mobile formats
-  - [ ] Web app is shown in a mobile format
+- [√] Cards contain images in addition to or in place of text
+  - [√] Some or all cards have images in place of or in addition to text
 
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://i.imgur.com/2AHEReZ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/x7QS401.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+GIF created with imgur
 
-GIF created with Giphy
 ## Notes
 
 Describe any challenges encountered while building the app.
+
 ## License
 
-    Copyright 2025 Matthew Alexander Awad
+    Copyright [2025] [Matthew Awad]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
