@@ -1,13 +1,29 @@
 body {
     background-color: rgb(39, 39, 39);
 }
+
+.Meets{
+  display: flex;
+  flex-direction: column;
+}
+
+.Highlights{
+  display: flex;
+  flex-direction: column;
+}
+
+.Header{
+  display: flex;
+  flex-direction: column;
+}
+
 .Event {
-    font-size: 1rem;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    color: rgb(39, 39, 39);
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  color: rgb(39, 39, 39);
 }
 
 .Event:hover{
