@@ -1,6 +1,7 @@
 import './App.css';
 import Meets from './components/Meets';
-import Highlight from './components/Gallery'
+import Gallery from './components/Gallery'
+
 const App = () => {
 
   return (
@@ -10,7 +11,7 @@ const App = () => {
       </div>
       <div className="Highlights">
         <h2>Highlights from Recent Events</h2>
-        <Highlight />
+        <Gallery />
       </div>
       <div className="Meets">
         <h2>Explore Different Communities</h2>

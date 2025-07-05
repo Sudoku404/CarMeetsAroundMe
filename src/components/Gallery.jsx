@@ -1,29 +1,26 @@
 import React from "react";
 import { useState } from 'react';
 import { galleryList } from "../galleryData";
+import GalleryQuiz from "./GalleryQuiz"
 
 const Gallery = () => {
 
     const [currentPage, setPage] = useState(0); 
+   
     let gallery = galleryList[currentPage]
-    function handlePreviousClick() {
-        if(currentPage == 0){
-            galleryIsFlipped(false); 
-            setPage(galleryList.length-1);
-        }
-        else{
-            setPage(currentPage - 1);
-        }
-    }
+
+    const isLastPage = currentPage === galleryList.length-1;
     
+    const isFirstPage = currentPage === 0;
+
+    function handlePreviousClick() {
+            galleryIsFlipped(false);
+            setPage(currentPage - 1);
+    }
+
     function handleNextClick() {
         galleryIsFlipped(false); 
-        if(currentPage == galleryList.length-1){
-            setPage(0);
-        }
-        else{
-            setPage(currentPage +1);
-        }
+        setPage(currentPage +1);
     }
     
     const [isFlipped, galleryIsFlipped] = useState(false);
@@ -44,17 +41,15 @@ const Gallery = () => {
                         <h3>Artist Name: {gallery.artist}</h3>
                         <h3>{gallery.description}</h3>
                     </div>
-                   
                 </div>
             </div>
             <div className = 'GalleryNavButtons'>
-                <button onClick={handlePreviousClick}>Back</button>
+                <button className='previousButton' onClick={handlePreviousClick} disabled={isFirstPage} style={{opacity:isFirstPage ? 0.5 : 1 }}>Back</button>
                 <h4>{currentPage+1}/{galleryList.length}</h4>
-                <button onClick={handleNextClick}>Next</button>
+                <button className='nextButton' onClick={handleNextClick} disabled={isLastPage} style={{opacity:isLastPage ? 0.5 : 1 }}>Next</button>
             </div>
-        </div>
-        
-       
+            <GalleryQuiz currentPage={currentPage}/>
+        </div>        
     )
 }
 

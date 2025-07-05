@@ -54,6 +54,7 @@ button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 button:hover {
   background-color: rgb(140, 140, 140);
   transform: translateY(-2px);
@@ -72,7 +73,10 @@ button:active {
   gap: 1rem;
   padding: 1rem 0;
 }
-
+.GalleryNavButtons:disabled{
+  opacity: 50%;
+  cursor: not-allowed;
+}
 .gallery-card {
   perspective: 1000px;
   width: 100%;
@@ -128,4 +132,88 @@ button:active {
   max-height: 100%;
   border-radius: 8px;
   object-fit: contain;
+}
+
+/* ===== Quiz Styles ===== */
+.quiz-container {
+  background-color: rgb(109, 109, 109);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.quiz-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.quiz-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quiz-container input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  background-color: rgb(39, 39, 39);
+  color: whitesmoke;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container button[type="submit"] {
+  background-color: rgb(202, 245, 222);
+  color: rgb(39, 39, 39);
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container button[type="submit"]:hover {
+  background-color: rgb(180, 230, 200);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-container button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+.streak-display {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.streak-display p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.streak-count, .highest-streak {
+  font-weight: bold;
+  margin-left: 0.5rem;
+  color: rgb(202, 245, 222);
+  font-size: 1.4rem;
 }
